@@ -3,6 +3,7 @@ import axios from "axios";
 import styles from "./Courses.module.css";
 import CoursesNav from "./CoursesNav";
 import CardsContainer from "./CardsContainer";
+import Footer from "../Footer/Footer";
 
 const Courses = (props) => {
   const [courses, setCourses] = useState([]);
@@ -32,6 +33,7 @@ const Courses = (props) => {
   };
 
   return (
+    <div>
     <div className={styles.App}>
       <CoursesNav inputvalue={inputvalue} filterchange={filterchange} />
       <CardsContainer
@@ -39,6 +41,10 @@ const Courses = (props) => {
         newcourses={newcourses}
         inputvalue={inputvalue}
       />
+    </div>
+    <div>
+    <Footer/>
+    </div>
     </div>
   );
 };

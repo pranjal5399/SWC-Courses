@@ -1,0 +1,25 @@
+.footer{
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    padding: 0.4rem 4.5rem;
+   background-color: rgb(155,210,255);
+    background-color: rgb(37, 47, 90);
+    transition: all 0.4s;
+    font-weight: 500;
+    color: #fff;
+    margin-right: 1rem;
+    bottom: 0;
+  }
+.h1{
+  font-style: oblique;
+  font-weight: bold;
+  font-family: cursive;
+    color: #fff;
+}
+.img{
+  float: left;
+  padding-right: 23px;
+  margin-top: 7px;
+}

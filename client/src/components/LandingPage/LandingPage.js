@@ -5,6 +5,7 @@ import styles from "./LandingPage.module.css";
 import CardContainer from "./Cards/CardContainer";
 import axios from "axios";
 import ErrorBoundary from "../../hoc/ErrorBoundary";
+import Footer from "../Footer/Footer";
 
 const LandingPage = (props) => {
   const [courses, setCourses] = useState([]);
@@ -32,6 +33,7 @@ const LandingPage = (props) => {
       <ErrorBoundary>
         <CardContainer courses={courses} />
       </ErrorBoundary>
+      <Footer/>
     </div>
   );
 };
